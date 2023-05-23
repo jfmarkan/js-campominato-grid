@@ -20,25 +20,29 @@ main{
     width: 750px;
 }
 
+div.my_cell-one,
+div.my_cell-two,
+div.my_cell-three{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
 div.my_cell-one{
     width: calc(100% / 10);
     height: calc(100% / 10);
-    color: #000000;
-    border: 1px solid #000000;
 }
 
 div.my_cell-two{
     width: calc(100% / 9);
     height: calc(100% / 9);
-    color: #000000;
-    border: 1px solid #000000;
 }
 
 div.my_cell-three{
     width: calc(100% / 7);
     height: calc(100% / 7);
-    color: #000000;
-    border: 1px solid #000000;
 }
 
 .my_selected{

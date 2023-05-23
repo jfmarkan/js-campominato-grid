@@ -6,10 +6,12 @@ playButton.addEventListener('click', function(){
     for (let i = 1; i <= 100; i++) {
         const newCell = createElement('div', 'my_cell-one', i);
             newCell.addEventListener('click', function(){
-            newCell.classList.toggle('my_selected');
+                newCell.classList.toggle('my_selected');
+                console.log(i)
             });
-        gridElement.appendChild(createElement('div', 'my_cell-one', i))
+        gridElement.appendChild(newCell)
     }
+    
 });
 
 
