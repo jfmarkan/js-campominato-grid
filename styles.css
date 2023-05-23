@@ -7,17 +7,15 @@
 }
 
 /* STYLES */
-header{
-    height: 70px;
-}
+
 
 main{
     background-color: #7fffd4;
 }
 
 .my_grid-container{
-    height: 750px;
-    width: 750px;
+    height: 720px;
+    width: 720px;
 }
 
 div.my_cell-one,
