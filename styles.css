@@ -1,0 +1,33 @@
+/* RESET */
+
+* {
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* STYLES */
+header{
+    height: 70px;
+}
+
+main{
+    background-color: #7fffd4;
+}
+
+.my_grid-container{
+    height: 750px;
+    width: 750px;
+}
+
+div.my_cell-one{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.my_selected{
+    background-color: #001432;
+    color: #FFFFFF;
+}
