@@ -27,6 +27,20 @@ div.my_cell-one{
     border: 1px solid #000000;
 }
 
+div.my_cell-two{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+div.my_cell-three{
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+    color: #000000;
+    border: 1px solid #000000;
+}
+
 .my_selected{
     background-color: #001432;
     color: #FFFFFF;

@@ -1,18 +1,16 @@
 const playButton = document.querySelector('button');
 const gridElement = document.getElementById('grid');
-
+const dificultySelector = document.getElementById('dificulty').value;
 
 playButton.addEventListener('click', function(){
-    for (let index = 1; index <= 100; index++) {
-        const newCell = createElement('div', 'my_cell-one');
-        newCell.innerText = index;
+    for (let i = 1; i <= 100; i++) {
+        const newCell = createElement('div', 'my_cell-one', i);
             newCell.addEventListener('click', function(){
             newCell.classList.toggle('my_selected');
-        });
-        gridElement.appendChild(createElement('div', 'my_cell-one'))
+            });
+        gridElement.appendChild(createElement('div', 'my_cell-one', i))
     }
-}
-);
+});
 
 
 
@@ -31,8 +29,9 @@ playButton.addEventListener('click', function(){
  * @param {string} tagName The tag of the element to be created as a string
  * @param {string} className The classes of the element to be created as a string
  */
-function createElement(tagName, className){
+function createElement(tagName, className, innerText){
     const cellElement = document.createElement(tagName);
     cellElement.className = className;
+    cellElement.innerText = innerText;
     return cellElement;
 }
